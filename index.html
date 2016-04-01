@@ -212,7 +212,7 @@ p[data-color="green"] {
             <p>
               <pre><code data-trim contenteditable style="padding:20px">
   background: color image position/size repeat
-              origin clip attachment initial|inherit;
+          origin clip attachment initial|inherit;
               </code></pre>
               
               <br/>
@@ -234,9 +234,106 @@ p[data-color="green"] {
         
         <section>
           <section>
+            <h2>.class vs .class</h2>
+            <p>
+              <pre><code data-trim contenteditable style="padding:20px">
+<div class="blue box"></div>
+
+div { height: 200px; width: 200px; }
+.blue { background-color: blue; }
+.box {  background-color: red; }
+              </code></pre>
+              <br/>
+              
+              swap them.
+            </p>
+          </section>
+          
+          <section>
+            <h2>#id vs .class</h2>
+            <p>
+              <pre><code data-trim contenteditable style="padding:20px">
+<div class="box" id="box"></div>
+
+div { height: 200px; width: 200px; }
+#box {  background-color: red; }
+.blue { background-color: blue; }
+              </code></pre>
+              <br/>
+              
+              swap them.
+            </p>
+          </section>
+
+          <section>
             <h2>Specificity</h2>
             <p>
               <img src="http://cursor-education.github.io/7CSS-Basics/specificity-calculationbase.png" />
+              
+              <br/>
+              <br/>
+              
+              <a href="https://jsfiddle.net/Lwr9o23a/">https://jsfiddle.net/Lwr9o23a/</a>
+              <br/>
+              <a href="https://jsfiddle.net/Lwr9o23a/1/">https://jsfiddle.net/Lwr9o23a/1/</a>
+            </p>
+          </section>
+
+          <section>
+            <h2>Specificity</h2>
+            <p>
+              <pre><code data-trim contenteditable style="padding:20px">
+!important
+              </code></pre>
+              
+              <br/>
+              <br/>
+              
+              <pre><code data-trim contenteditable style="padding:20px">
+table td    {height: 50px !important;}
+.myTable td {height: 50px !important;}
+#myTable td {height: 50px !important;}
+              </code></pre>
+            </p>
+          </section>
+          
+          <section>
+            <h2>Samples calculations</h2>
+            <p>
+              <img src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-1.png" />
+            </p>
+          </section>
+          
+          <section>
+            <h2>Samples calculations</h2>
+            <p>
+              <img src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-2.png" />
+            </p>
+          </section>
+          
+          <section>
+            <h2>Samples calculations</h2>
+            <p>
+              <img src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-4.png" />
+            </p>
+          </section>
+          
+          <section>
+            <h2>Samples calculations</h2>
+            <p>
+              <img src="https://css-tricks.com/wp-content/csstricks-uploads/cssspecificity-calc-4.png" />
+            </p>
+          </section>
+          
+          <section>
+            <h2>Specificity Special Rules</h2>
+            <p>
+              <ul>
+                <li>The universal selector (*) is worth 0</li>
+                <li>When two selectors have the same specificity, the last one wins</li>
+                <li>Elements can never beat a class selector, even if you pile them on</li>
+                <li>!important is Superman, it can beat up almost anything</li>
+              </ul>
             </p>
           </section>
         </section>
@@ -327,25 +424,7 @@ p[data-color="green"] {
           <p>
             <ul style="font-size:25px" class="items-margin-bottom">
               <li>
-                Что на самом деле происходит, когда пользователь вбивает в браузер адрес google.com
-                <br/>
-                <a href="http://habrahabr.ru/company/htmlacademy/blog/254825/" target="_blank">http://habrahabr.ru/company/htmlacademy/blog/254825/</a>
-
-              <li>
-                Internet evolution timeline</b>
-                <br/>
-                <a href="http://www.evolutionoftheweb.com/?hl=ru" target="_blank">http://www.evolutionoftheweb.com/?hl=ru</a>
-
-              <li>
-                Explore and Master Chrome DevTools
-                <br/>
-                <a href="http://discover-devtools.codeschool.com/" target="_blank">http://discover-devtools.codeschool.com/</a>
-
-              <li>
-                Таненбаум Эндрю "Компьютерные сети"
-
-              <li>
-                <a href="http://www.slideshare.net/dulithsl/internet-protocol-ip-ppt?qid=22f6e1c6-724a-48e3-99d8-e6f2cd0515de&v=default&b=&from_search=1">Internet protocol (ip) ppt</a>
+                <a href="https://specificity.keegan.st/">https://specificity.keegan.st/</a>
             </ul>
           </p>
         </section>
