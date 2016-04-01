@@ -90,6 +90,27 @@ h1 {
 }
             </code></pre>
           </section>
+          
+          <section>
+            <h2>Structure</h2>
+            <p>
+<pre class="prettyprint example lang-html">&lt;p id="main" class="text paragraph" 
+    data-color="green"&gt;Dummy text&lt;/p&gt;
+</pre>
+<pre class="prettyprint example">
+#main {...}
+.text {...}
+p {...}
+
+p.text {...}
+.text.paragraph {...}
+
+p[data-color="green"] { 
+    color: green; 
+}
+</pre>
+            </p>
+          </section>
         </section>
 
         <section>
@@ -132,6 +153,23 @@ h1 {
 
         <section>
           <section>
+            <h2>font</h2>
+            
+            <p>
+              <ul>
+                <li>font-family
+                <li>font-style
+                <li>font-variant
+                <li>font-weight
+                <li>font-size
+                <li>font
+              </ul>
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <section>
             <h2>background</h2>
             <p>
             <pre><code data-trim contenteditable style="padding:20px">
@@ -150,23 +188,6 @@ background: color image position/size repeat origin clip attachment initial|inhe
               
               <br/>
               http://www.w3schools.com/cssref/css3_pr_background.asp
-            </p>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h2>font</h2>
-            
-            <p>
-              <ul>
-                <li>font-family
-                <li>font-style
-                <li>font-variant
-                <li>font-weight
-                <li>font-size
-                <li>font
-              </ul>
             </p>
           </section>
         </section>
