@@ -1,4 +1,4 @@
-#### cursor-education.github.io/css-lecture
+#### http://cursor-education.github.io/css-lecture
 
 Need to add:
 - reflow
