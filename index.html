@@ -35,17 +35,9 @@
            <h2>Agenda</h2>
            <p>
              <ul>
-                <li class="fragment highlight-blue">Evolution of Web
-                <li class="fragment highlight-blue">Model TCP/IP & OSI
-                <li class="fragment highlight-blue">Protocol definition & examples
-                <li class="fragment highlight-blue">IP Address & Socket & URL
-                <li class="fragment highlight-blue">NAT
-                <li class="fragment highlight-blue">DNS Service
-                <li class="fragment highlight-blue">HTTP protocol
-                <li class="fragment highlight-blue">Stateful (cookies & Sessions)
-                <li class="fragment highlight-blue">SSL & HTTPS
-                <li class="fragment highlight-blue">Packet analyzers & sniffers (\w browser extensions)
-                <li class="fragment highlight-blue">WebSockets overview
+                <li class="fragment highlight-blue">Intro
+                <li class="fragment highlight-blue">Selectors
+                <li class="fragment highlight-blue">Base & Advanced properties
              </ul>
            </p>
         </section>
@@ -68,7 +60,7 @@ body {background-color: #FF0000;}
         
         <section>
           <section>
-            <h2>Rules</h2>
+            <h2>Syntax</h2>
             <pre><code data-trim contenteditable style="padding:20px">
 selector {
   property: value;
@@ -79,14 +71,19 @@ selector {
           </section>
           
           <section>
-            <h2>Rules</h2>
+            <h2>Syntax (example)</h2>
             <pre><code data-trim contenteditable style="padding:20px">
 p {
   /* ... */
 }
 
 h1 {
-  /* ... */
+  property: url("http://google.com");
+  property: 0.7;
+  property: 90%;
+  property: #ff0000;
+  property: rgb(255, 0, 0);
+  property: uppercase;
 }
             </code></pre>
           </section>
@@ -146,6 +143,9 @@ p[data-color="green"] {
             
             <br/>
             
+            <a href="https://www.w3.org/TR/CSS21/media.html#media-types">https://www.w3.org/TR/CSS21/media.html#media-types</a>
+            <br/>
+
             <img src="http://ru.html.net/tutorials/css/figure002.png" />
           </section>
 
@@ -174,6 +174,17 @@ p[data-color="green"] {
               <pre><code data-trim contenteditable style="padding:20px">
 #welcome-page { .. }
 .section { .. }
+.section#welcome { ... }
+.section.otherClass.oneMoreOtherClass { ... }
+              </code></pre>
+              
+              <br/>
+              
+              <pre><code data-trim contenteditable style="padding:20px">
+<h1 class="header"></h1>
+<p class="content intro">
+  <em class="comment"></em>
+</p>
               </code></pre>
             </p>
           </section>
@@ -492,6 +503,11 @@ table td    {height: 50px !important;}
               Relative units: <b>em</b>, <b>rem</b>, <b>ex</b>, <b>px</b>, <b>%</b>
               <br/>
               Absolute units: <b>in</b>, <b>cm</b>, <b>mm</b>, <b>pt</b>, <b>pc</b>
+              
+              <br/>
+              <br/>
+              
+              <a href="https://jsfiddle.net/gubtxyof/6/">https://jsfiddle.net/gubtxyof/6/</a>
             </p>
           </section>
         </section>
