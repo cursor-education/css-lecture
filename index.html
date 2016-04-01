@@ -47,14 +47,14 @@
         <section>
           <section>
             <h2>CSS vs HTML</h2>
-            <pre><code data-trim contenteditable style="padding:20px">
+            <pre><code data-trim contenteditable>
 &lt;body bgcolor="#FF0000"&gt;
             </code></pre>
           </section>
           
           <section>
             <h2>CSS vs HTML</h2>
-            <pre><code data-trim contenteditable style="padding:20px">
+            <pre><code data-trim contenteditable>
 body {background-color: #FF0000;}
             </code></pre>
           </section>
@@ -63,7 +63,7 @@ body {background-color: #FF0000;}
         <section>
           <section>
             <h2>Syntax</h2>
-            <pre><code data-trim contenteditable style="padding:20px">
+            <pre><code data-trim contenteditable>
 selector {
   property: value;
   property2: value;
@@ -74,7 +74,7 @@ selector {
           
           <section>
             <h2>Syntax (example)</h2>
-            <pre><code data-trim contenteditable style="padding:20px">
+            <pre><code data-trim contenteditable>
 p {
   /* ... */
 }
@@ -93,7 +93,7 @@ h1 {
           <section>
             <h2>Structure</h2>
             <p>
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 &lt;p id="main" class="text paragraph" 
     data-color="green"&gt;Dummy text&lt;/p&gt;
 
@@ -115,7 +115,7 @@ p[data-color="green"] {
         <section>
           <section>
             <h2>Inline</h2>
-            <pre><code data-trim contenteditable style="padding:20px">
+            <pre><code data-trim contenteditable>
 &lt;body style="background-color: #FF0000;"&gt;
   &lt;p&gt;This is a red page&lt;/p&gt;
 &lt;/body&gt;
@@ -130,7 +130,7 @@ p[data-color="green"] {
 
           <section>
             <h2>Style tag (in the HEAD)</h2>
-            <pre><code data-trim contenteditable style="padding:20px">
+            <pre><code data-trim contenteditable>
 &lt;style type="text/css">
   body {background-color: #FF0000;}
 &lt;/style>
@@ -139,7 +139,7 @@ p[data-color="green"] {
           
           <section>
             <h2>External file</h2>
-            <pre><code data-trim contenteditable style="padding:20px">
+            <pre><code data-trim contenteditable>
 &lt;link rel="stylesheet" type="text/css" href="style/style.css" /&gt;
             </code></pre>
             
@@ -154,7 +154,7 @@ p[data-color="green"] {
           <section>
             <h2>Imports</h2>
             <p>
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 @import "style-1.css";
 @import url("style-2.css");
               </code></pre>
@@ -173,14 +173,14 @@ p[data-color="green"] {
               <br/>
               <br/>
               
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 #welcome-page { .. }
 .section { .. }
 .section#welcome { ... }
 .section.otherClass.oneMoreOtherClass { ... }
               </code></pre>
               
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 <h1 class="header"></h1>
 <p class="content intro">
   <em class="comment"></em>
@@ -196,7 +196,7 @@ p[data-color="green"] {
             <h2>Tag</h2>
             
             <p>
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 a { .. }
 ul { .. }
               </code></pre>
@@ -207,7 +207,7 @@ ul { .. }
             <h2>Attributes</h2>
             
             <p>
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 <tag attribute="value">content</tag>
 
 [attribute] { ... }
@@ -222,7 +222,7 @@ selector[attribute1="value1"][attribute2="value2"].. { .. }
             <h2>Next</h2>
             
             <p>
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 #container + p {
   color: red;
 }
@@ -256,7 +256,7 @@ selector[attribute1="value1"][attribute2="value2"].. { .. }
             <h2>First level inner</h2>
             
             <p>
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 #container > p {
   font-size: 30px;
 }
@@ -299,7 +299,7 @@ selector[attribute1="value1"][attribute2="value2"].. { .. }
               </ul>
               
               <br/>
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 selector::after {
   content: 'text';
 }
@@ -406,7 +406,7 @@ selector::after {
           <section>
             <h2>background</h2>
             <p>
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
   background: color image position/size repeat
           origin clip attachment initial|inherit;
               </code></pre>
@@ -432,7 +432,7 @@ selector::after {
           <section>
             <h2>All</h2>
             <p>
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 * {
   color: red;
 }
@@ -443,7 +443,7 @@ selector::after {
           <section>
             <h2>All in container</h2>
             <p>
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 #container * {
   color: red;
 }
@@ -456,7 +456,7 @@ selector::after {
           <section>
             <h2>.class vs .class</h2>
             <p>
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 <div class="blue box"></div>
 
 div { height: 200px; width: 200px; }
@@ -472,7 +472,7 @@ div { height: 200px; width: 200px; }
           <section>
             <h2>#id vs .class</h2>
             <p>
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 <div class="box" id="box"></div>
 
 div { height: 200px; width: 200px; }
@@ -505,13 +505,13 @@ div { height: 200px; width: 200px; }
           <section>
             <h2>!important</h2>
             <p>
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 !important
               </code></pre>
               
               <br/>
               
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 table td    {height: 50px !important;}
 .myTable td {height: 50px !important;}
 #myTable td {height: 50px !important;}
@@ -612,7 +612,7 @@ table td    {height: 50px !important;}
               <img src="http://ru.html.net/tutorials/css/figure010.gif" />
             </p>
             
-            <pre><code data-trim contenteditable style="padding:20px">
+            <pre><code data-trim contenteditable>
 * {
   box-sizing: border-box;
 }
@@ -639,7 +639,7 @@ table td    {height: 50px !important;}
           <section>
             <h2>Positioning</h2>
             <p>
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 .element {
   position: static; /* default */
   position: relative;
@@ -662,7 +662,7 @@ table td    {height: 50px !important;}
               <img src="http://cursor-education.github.io/7CSS-Basics/web-text-wrap.png" />
               <br/>
 
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 .element {
     float: left;
 }
@@ -676,7 +676,7 @@ table td    {height: 50px !important;}
               <img src="http://cursor-education.github.io/7CSS-Basics/web-layout.png" />
               <br/>
 
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 .element {
     float: right;
 }
@@ -707,7 +707,7 @@ table td    {height: 50px !important;}
             <p>
               <img src="http://cursor-education.github.io/7CSS-Basics/reflow-example-1.png" />
               <br/>
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 .element {
     float: left;
 }
@@ -721,7 +721,7 @@ table td    {height: 50px !important;}
             <p>
               <img src="http://cursor-education.github.io/7CSS-Basics/reflow-example-2.png" />
               <br/>
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 .element {
     float: left;
 }
@@ -745,7 +745,7 @@ table td    {height: 50px !important;}
             <p>
               <img src="http://cursor-education.github.io/7CSS-Basics/clearedfooter.png" />
               <br/>
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 .footer {
     clear: both;
     float: none;
@@ -760,7 +760,7 @@ table td    {height: 50px !important;}
             <p>
               <img src="http://cursor-education.github.io/8CSS-Advanced/images/clearfix.png" />
               <br/>
-              <pre><code data-trim contenteditable style="padding:20px">
+              <pre><code data-trim contenteditable>
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -814,7 +814,7 @@ table td    {height: 50px !important;}
           </section>
         </section>
 
-        <section style="text-align: left;">
+        <section class="text-left">
           <h2>THE END</h2>
         </section>
 
@@ -836,6 +836,9 @@ table td    {height: 50px !important;}
               
               <li>
                 <a href="https://codex.wordpress.org/Validating_a_Website">https://codex.wordpress.org/Validating_a_Website</a>
+              
+              <li>
+                <a href="http://code.tutsplus.com/ru/tutorials/the-30-css-selectors-you-must-memorize--net-16048">http://code.tutsplus.com/ru/tutorials/the-30-css-selectors-you-must-memorize--net-16048</a>
             </ul>
           </p>
         </section>
